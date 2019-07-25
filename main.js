@@ -11,3 +11,7 @@ function timer(){
         timerText.innerHTML = count;
     }, 1000);
 };
+btnPause.addEventListener('click', pauseTimer);
+function pauseTimer(){
+    clearInterval(intervalID);
+}
